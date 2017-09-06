@@ -15,7 +15,7 @@ def stockCheck():
 		try:
 			page = urllib2.urlopen(u)
 			soup = BeautifulSoup(page.read())
-		except urllib2.URLError:	# behind proxy - at work
+		except urllib2.URLError:	# behind proxy
 			# get  proxy details
 			from details import username, passw, proxy
 			
